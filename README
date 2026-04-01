@@ -1,0 +1,28 @@
+# 🐟 Website Ikan
+
+![PHP Native](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+Sebuah sistem informasi manajemen berbasis web yang dirancang khusus untuk mempermudah para pembudidaya/petani ikan dalam mengelola operasional tambak. Aplikasi ini memfasilitasi pencatatan siklus budidaya mulai dari data kolam, manajemen bibit, pemantauan pemberian pakan, kalkulasi biaya operasional, hingga pencatatan hasil panen. Dibangun menggunakan **PHP Native** dan database **MySQL** dengan arsitektur modular.
+
+## ✨ Fitur Utama
+
+- **Frontend Interaktif**: Halaman publik dinamis dengan _layout_ menggunakan Flexbox CSS.
+- **Sistem Routing**: Navigasi halaman terpusat menggunakan URL parameter (`?page=`).
+- **Dashboard Admin (CMS)**: Panel kontrol khusus untuk mengelola halaman depan (Home).
+- **CRUD & Manajemen File**: Admin dapat menambah, mengubah, mengaktifkan, dan menghapus konten, lengkap dengan penghapusan aset gambar fisik otomatis.
+
+## 📂 Struktur Direktori Proyek
+
+```text
+WEBSITE_IKAN/
+├── assets/                 # Aset statis (CSS, JS, dan ikon/logo UI)
+├── components/             # Bagian modular UI yang dipanggil berulang (Header, Footer)
+├── includes/               # Konfigurasi sistem (Koneksi Database PDO)
+├── pages/                  # Logika dan tampilan setiap halaman (Frontend & Dashboard)
+├── resources/images/       # Tempat penyimpanan file upload / gambar dinamis (Background, dll)
+├── index.php               # Front Controller / Routing utama publik
+└── README.md               # Dokumentasi proyek
+```
